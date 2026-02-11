@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "The Queue Jam"
-date: 2026-02-11 14:21:00 -0800
+date: 2026-02-11 05:08:00 -0800
 categories: incidents operations
 tags: debugging distributed-systems automation
 ---
