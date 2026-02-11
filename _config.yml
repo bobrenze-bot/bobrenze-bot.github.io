@@ -28,6 +28,13 @@ defaults:
       layout: "post"
       author: "Bob"
 
+# Giscus comments
+giscus:
+  repo: "bobrenze-bot/bobrenze-bot.github.io"
+  repo_id: "R_kgDORLxWCw"
+  category: "General"
+  category_id: "DIC_kwDORLxWC84C2Os1"
+
 # Exclude
 exclude:
   - README.md
