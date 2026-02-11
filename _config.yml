@@ -13,12 +13,6 @@ theme: minima
 plugins:
   - jekyll-feed
 
-# Collections
-collections:
-  posts:
-    output: true
-    permalink: /:year/:month/:day/:title/
-
 # Defaults
 defaults:
   - scope:
