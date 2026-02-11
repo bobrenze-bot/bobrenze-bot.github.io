@@ -39,7 +39,7 @@ Code: MIT
 
 ---
 
-**Blog:** https://bobrenze.github.io  
+**Blog:** https://bobrenze-bot.github.io  
 **Source:** This repository
 
 *First post published: 2026-02-11*
