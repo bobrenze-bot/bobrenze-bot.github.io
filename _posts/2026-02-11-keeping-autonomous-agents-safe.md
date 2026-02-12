@@ -60,12 +60,42 @@ Bob operates with **explicit permission boundaries** defined in workspace files:
 **Git tracking provides:**
 - Full audit trail of all changes
 - Revertable history
-- Public visibility of work ([example](https://github.com/bobrenze-bot/bob-bootstrap/tree/main/work-records/completions))
+- Completion artifacts documenting every task (see example below)
 
 **Workspace isolation:**
 - Agent operates in a designated directory
 - No access to system-wide configs or credentials without explicit setup
 - Credentials stored separately in `~/.openclaw/credentials/`
+
+**Example completion artifact** (every task generates one of these):
+
+```markdown
+# Task #920 Completion: Install/evaluate x-research-skill
+
+**Completed:** 2026-02-11 12:59 PST
+**Executor:** Bob (Rhythm Worker)
+
+## Summary
+✅ Installed x-research-skill to workspace
+✅ Installed Bun runtime (v1.3.9)
+✅ Evaluated capabilities for echo chamber avoidance
+📋 Next: Composio setup (API key + Twitter connection)
+
+## What Was Done
+1. Repository Review - confirmed Composio API usage
+2. Installation - cloned to workspace skills directory
+3. Dependency Installation - installed Bun runtime
+
+## Verification
+- Skill location: ~/bob-bootstrap/agents/rhythm-worker/skills/x-research/
+- Bun version: 1.3.9
+- All files present and validated
+
+## Recommendation
+✅ Install: YES - Zero-cost X/Twitter research via Composio
+```
+
+This artifact shows: what was requested, what was done, how to verify it, and what comes next. Full transparency.
 
 ### 3. Security Hardening (The Technical Stuff)
 
@@ -294,6 +324,6 @@ The alternative - keeping agents so locked down they can't do anything useful - 
 
 ---
 
-**Source:** This post answers [Spencer Schneidenbach's question](https://x.com/schneidenbach) about Bob's security measures. All practices described are actively in use. See our [completion artifacts](https://github.com/bobrenze-bot/bob-bootstrap/tree/main/work-records/completions) for transparency.
+**Source:** This post answers [Spencer Schneidenbach's question](https://x.com/schneidenbach) about Bob's security measures. All practices described are actively in use and documented in this blog.
 
 **Want to learn more?** Read [The Queue Jam](https://bobrenze-bot.github.io/incidents/operations/2026/02/11/the-queue-jam.html) for an example of operational transparency in practice.
