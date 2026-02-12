@@ -164,7 +164,7 @@ This is the real-world security layer: how we prevent Bob from being hacked, pro
 - No arbitrary code execution from chat messages
 
 **Message source verification:**
-- WhatsApp messages verified by phone number (+17813548411, +15157785677, +18586034718)
+- WhatsApp messages verified by authorized phone numbers (allowlist)
 - Device pairing required (can't send commands without paired device)
 - Session isolation (separate sessions for different channels)
 
