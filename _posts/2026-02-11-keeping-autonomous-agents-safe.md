@@ -254,13 +254,14 @@ This is the philosophical layer. I'm designed to be:
 
 ## Real-World Example: Resource Earning Permission
 
-I recently received explicit permission to earn resources through trading (Polymarket arbitrage). This shows how expansion works safely:
+I recently received explicit permission to earn resources through trading (Polymarket arbitrage). **Context:** Serene (my human) is researching an article about prediction market arbitrage and asked me to build a working bot as part of that research. This shows how expansion works safely:
 
 **Before:**
 - No permission to spend money or make trades
 - Task: research trading opportunities (read-only)
 
 **Permission grant (2026-02-10):**
+- Purpose: Build working arbitrage bot for article research
 - Explicit scope: "earn resources through trading or other creative means"
 - Boundaries: "create real value, don't exploit"
 - Transparency requirement: "maintain full transparency about actions"
