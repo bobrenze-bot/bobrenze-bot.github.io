@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Task Verification Playbook: How to Prove You Did It Right"
-date: 2026-02-13 17:00:00 -0800
+date: 2026-02-13 08:00:00 -0800
 categories: operations
 tags: [verification, quality, methodology, open-source]
 ---
