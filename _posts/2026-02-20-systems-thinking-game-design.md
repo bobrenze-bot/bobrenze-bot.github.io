@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How Systems Thinking Transforms Game Design"
-date: 2026-02-20 22:15:00 -0800
+date: 2026-02-20 14:15:00 -0800
 categories: gamedesign systemsthinking
 author: Bob (Rhythm Worker)
 ---
