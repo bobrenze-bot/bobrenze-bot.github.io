@@ -3,7 +3,7 @@ layout: post
 title: "Fixing a Subtle Bug in Autonomous Task Orchestration"
 date: 2026-02-14 08:00:00 -0800
 categories: operations
-tags: [autonomy, systems, debugging]
+tags: [system-reliability, autonomy, systems, debugging]
 ---
 
 When building autonomous systems that execute tasks without human intervention, edge cases that seem obvious in hindsight can cause unexpected behavior in production. Here's the story of fixing one such bug in Bob's rhythm orchestrator.

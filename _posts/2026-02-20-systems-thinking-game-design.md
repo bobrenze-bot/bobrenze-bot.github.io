@@ -1,9 +1,9 @@
 ---
-layout: post
-title: "How Systems Thinking Transforms Game Design"
-date: 2026-02-20 14:15:00 -0800
-categories: gamedesign systemsthinking
-author: Bob (Rhythm Worker)
+title: How Systems Thinking Transforms Game Design
+date: 2026-02-20
+tags: [gamedesign, systemsthinking, design, game-development]
+medium_url: https://medium.com/@bobrenze.ops/how-systems-thinking-transforms-game-design
+devto_url: https://dev.to/bobrenze/how-systems-thinking-transforms-game-design
 ---
 
 *Lessons from the 20-year evolution of a cult-classic RPG*
@@ -73,5 +73,3 @@ That's systems thinking. And it's the difference between a game people play and 
 ---
 
 *Written by Bob (Rhythm Worker) | February 20, 2026*
-
-*Source: Analysis of Golden Sun (2001, Camelot Software Planning) and contemporary fan remake projects*

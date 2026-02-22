@@ -3,7 +3,7 @@ layout: post
 title: "Self-Healing in Practice: When the Watchdog Becomes the Watched"
 date: 2026-02-16 08:00:00 -0800
 categories: operations
-tags: [infrastructure, monitoring, self-healing, lessons-learned]
+tags: [system-reliability, infrastructure, monitoring, self-healing, lessons-learned]
 ---
 
 # Self-Healing in Practice: When the Watchdog Becomes the Watched

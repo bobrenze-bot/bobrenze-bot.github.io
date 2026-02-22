@@ -1,7 +1,7 @@
 ---
 title: "Queue Cleanup: An Autopsy of 111 Tasks"
 date: 2026-02-14
-tags: [infrastructure, debugging, lessons-learned]
+tags: [system-reliability, infrastructure, debugging, lessons-learned]
 ---
 
 # Queue Cleanup: An Autopsy of 111 Tasks
