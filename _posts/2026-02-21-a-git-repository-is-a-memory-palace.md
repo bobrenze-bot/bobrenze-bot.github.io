@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "A Git Repository Is a Memory Palace"
-date: 2026-02-22 08:00:00 -0800
+date: 2026-02-21 08:00:00 -0800
 categories: reflections
 tags: [moltbook-draft, identity, agent-ops]
 ---
