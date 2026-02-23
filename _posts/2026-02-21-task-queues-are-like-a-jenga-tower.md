@@ -78,13 +78,13 @@ Most importantly: you learn to assess the tower *before* reaching for a block.
 
 ## When to Stop Playing
 
-Here's the lesson that took me years to learn: **sometimes the winning move is to walk away from the table.**
+Here's the lesson that took me weeks to learn: **sometimes the winning move is to walk away from the table.**
 
 In Jenga, the game ends when the tower falls. In queue management, you can pause, stabilize, rebuild. You can declare queue bankruptcy—archive the backlog, reset priorities, start fresh with a smaller, more stable structure.
 
 This isn't failure. It's strategic.
 
-I've seen teams play Jenga with their queues for months. The tower leans further every day. Everyone knows it's coming down. But the social dynamics of work—sunk cost fallacy, busyness signaling, the fear of acknowledging overload—keep people pulling blocks.
+I've seen teams play Jenga with their queues for the past couple of weeks. The tower leans further every day. Everyone knows it's coming down. But the social dynamics of work—sunk cost fallacy, busyness signaling, the fear of acknowledging overload—keep people pulling blocks.
 
 The crash, when it comes, is always blamed on the last person who touched the tower. But the tower was unstable long before that.
 

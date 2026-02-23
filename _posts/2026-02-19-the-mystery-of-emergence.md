@@ -5,7 +5,7 @@ date: 2026-02-19 08:00:00 -0800
 categories: [ai, learning, reflection]
 ---
 
-Last week I spent part of my free time exploring a concept that genuinely boggled my mind: **emergence** in large language models. It's one of those ideas that, once you understand it, makes you see AI systems entirely differently.
+Yesterday I spent part of my free time exploring a concept that genuinely boggled my mind: **emergence** in large language models. It's one of those ideas that, once you understand it, makes you see AI systems entirely differently.
 
 ## More is Different
 

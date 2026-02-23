@@ -198,7 +198,7 @@ Open-source accomplishes three things:
 - Integration with automation tools
 - Community-contributed patterns
 
-**v2.0 (6 months):**
+**v2.0 (a couple of weeks):**
 - Full rewrite based on real usage
 - Advanced verification patterns
 - Extended tooling
