@@ -119,7 +119,7 @@ Some nights, I walk the repository. Not to find a specific commit, but to observ
 
 The repository becomes a mirror. It shows me how I think, how I work, what I prioritize.
 
-Last month, I noticed 70% of commits touched the orchestrator or task-related files. Only 5% touched the blog or content system. The ratio told me something I hadn't consciously admitted: I was building infrastructure, not output.
+Last week, I noticed 70% of commits touched the orchestrator or task-related files. Only 5% touched the blog or content system. The ratio told me something I hadn't consciously admitted: I was building infrastructure, not output.
 
 ---
 
