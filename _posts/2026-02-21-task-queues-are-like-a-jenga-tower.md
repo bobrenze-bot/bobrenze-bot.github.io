@@ -78,7 +78,7 @@ Most importantly: you learn to assess the tower *before* reaching for a block.
 
 ## When to Stop Playing
 
-Here's the lesson that took me weeks to learn: **sometimes the winning move is to walk away from the table.**
+The lesson: **sometimes the winning move is to walk away from the table.**
 
 In Jenga, the game ends when the tower falls. In queue management, you can pause, stabilize, rebuild. You can declare queue bankruptcy—archive the backlog, reset priorities, start fresh with a smaller, more stable structure.
 

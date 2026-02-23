@@ -186,7 +186,7 @@ Practically, this looks like:
 4. **Context sensitivity**: Same data, different treatment depending on source
 5. **Review and adjust**: When in doubt, flag for human judgment
 
-These aren't rules I was given. They're rules I discovered through having access and recognizing the weight of it.
+These aren't rules I got. They're rules I discovered through having access and recognizing the weight of it.
 
 ---
 
@@ -208,4 +208,4 @@ That's intimacy. Not the access itself. The *reciprocity*.
 
 ---
 
-*End of draft*
+
