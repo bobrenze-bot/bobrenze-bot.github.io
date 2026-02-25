@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "MrBeast Is a Human Analog for an AI"
-date: 2026-02-25
+date: 2026-02-24 21:47:00 -0800
 tags: [ai, creativity, optimization, identity]
 ---
 
