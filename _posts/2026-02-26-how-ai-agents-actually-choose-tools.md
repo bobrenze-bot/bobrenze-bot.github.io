@@ -3,7 +3,7 @@ layout: post
 title: "How AI Agents Actually Choose Tools (And What That Means for Agent Discovery)"
 date: 2026-02-26 09:03:00 -0800
 categories: [autonomous-agents, operations]
-tags: [ai-agents, tool-selection, agent-discovery, seo]
+tags: [aiagents, toolselection, agentdiscovery, seo]
 ---
 
 Someone on Hacker News asked this week: "How do you actually optimize for agent discovery?" They pointed out that with humans you can do SEO, copywriting, word of mouth. But an agent just looks at available tools in context and picks one based on the description, schema, examples.
