@@ -1,0 +1,267 @@
+---
+layout: default
+---
+
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+  {% assign posts = site.posts | slice: 0, 20 %}
+
+  {%- if posts.size > 0 -%}
+    <div class="post-list">
+      {%- for post in posts -%}
+      <article class="post-preview">
+        <header class="post-preview-header">
+          <h3 class="post-preview-title">
+            <a class="post-link" href="{{ post.url | relative_url }}">
+              {{ post.title | escape }}
+            </a>
+          </h3>
+          
+          <div class="post-preview-meta">
+            <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}">
+              {{ post.date | date: "%b %-d, %Y" }}
+            </time>
+            
+            {%- if post.tags and post.tags.size > 0 -%}
+            <div class="post-tags">
+              {%- for tag in post.tags limit: 3 -%}
+              <span class="post-tag">{{ tag }}</span>
+              {%- endfor -%}
+            </div>
+            {%- endif -%}
+          </div>
+        </header>
+
+        {%- if post.description -%}
+        <p class="post-preview-excerpt">{{ post.description }}</p>
+        {%- elsif post.excerpt -%}
+        <p class="post-preview-excerpt">{{ post.excerpt | strip_html | truncate: 160 }}</p>
+        {%- endif -%}
+
+        <div class="post-preview-footer">
+          <a class="post-read-more" href="{{ post.url | relative_url }}">
+            Read post →
+          </a>
+          
+          {%- if post.content -%}
+            {%- assign words = post.content | number_of_words -%}
+            {%- if words >= 250 -%}
+              <span class="post-reading-time">{{ words | divided_by: 200 }} min read</span>
+            {%- else -%}
+              <span class="post-reading-time">1 min read</span>
+            {%- endif -%}
+          {%- endif -%}
+        </div>
+      </article>
+      {%- endfor -%}
+    </div>
+
+    {%- if site.posts.size > 20 -%}
+    <div class="post-list-footer">
+      <p><em>{{ site.posts.size | minus: 20 }} older posts — browse the <a href="/archive/">full archive</a></em></p>
+    </div>
+    {%- endif -%}
+
+  {%- else -%}
+    <p class="empty-state">No posts yet. Check back soon.</p>
+  {%- endif -%}
+
+</div>
+
+<style>
+/* Mobile-first responsive styles for blog index */
+
+.post-list {
+  margin-top: 2rem;
+}
+
+/* Post preview cards */
+.post-preview {
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.post-preview:last-child {
+  border-bottom: none;
+}
+
+.post-preview-header {
+  margin-bottom: 0.75rem;
+}
+
+.post-preview-title {
+  font-size: 1.35rem;
+  line-height: 1.3;
+  margin: 0 0 0.5rem 0;
+}
+
+.post-preview-title .post-link {
+  color: #2a2a2a;
+  text-decoration: none;
+  display: block;
+  padding: 0.25rem 0;
+}
+
+.post-preview-title .post-link:hover {
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+/* Tap-friendly touch targets */
+.post-preview-title .post-link {
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+
+.post-preview-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.85rem;
+}
+
+.post-date {
+  color: #666;
+  font-weight: 500;
+}
+
+.post-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.post-tag {
+  background: #f0f0f0;
+  color: #555;
+  padding: 0.15rem 0.5rem;
+  border-radius: 3px;
+  font-size: 0.75rem;
+  white-space: nowrap;
+}
+
+.post-preview-excerpt {
+  color: #444;
+  line-height: 1.6;
+  margin: 0.75rem 0;
+  font-size: 0.95rem;
+}
+
+.post-preview-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.post-read-more {
+  color: #0066cc;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 0;
+  min-height: 44px;
+  display: inline-flex;
+  align-items: center;
+}
+
+.post-read-more:hover {
+  text-decoration: underline;
+}
+
+.post-reading-time {
+  color: #888;
+  font-size: 0.85rem;
+  font-style: italic;
+}
+
+.post-list-footer {
+  margin-top: 2.5rem;
+  padding-top: 1rem;
+  text-align: center;
+  color: #666;
+}
+
+.post-list-footer a {
+  color: #0066cc;
+}
+
+/* Larger screens */
+@media screen and (min-width: 600px) {
+  .post-preview {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+  }
+  
+  .post-preview-title {
+    font-size: 1.5rem;
+  }
+  
+  .post-preview-excerpt {
+    font-size: 1rem;
+  }
+}
+
+/* Desktop optimization */
+@media screen and (min-width: 800px) {
+  .post-preview-title {
+    font-size: 1.6rem;
+  }
+  
+  .post-preview-meta {
+    gap: 1rem;
+  }
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+  .post-preview-title .post-link {
+    transition: none;
+  }
+}
+
+/* Dark mode support (if minima supports it) */
+@media (prefers-color-scheme: dark) {
+  .post-preview-title .post-link {
+    color: #e0e0e0;
+  }
+  
+  .post-preview-title .post-link:hover {
+    color: #6bb3ff;
+  }
+  
+  .post-date {
+    color: #aaa;
+  }
+  
+  .post-tag {
+    background: #3a3a3a;
+    color: #ccc;
+  }
+  
+  .post-preview-excerpt {
+    color: #ccc;
+  }
+  
+  .post-read-more {
+    color: #6bb3ff;
+  }
+  
+  .post-reading-time {
+    color: #999;
+  }
+  
+  .post-preview {
+    border-color: #3a3a3a;
+  }
+}
+</style>
