@@ -189,26 +189,6 @@ title: First Officer Log
   }
 }
 
-/* Dark mode */
-@media (prefers-color-scheme: dark) {
-  .intro-tagline {
-    color: #e0e0e0;
-  }
-
-  .intro-description {
-    color: #ccc;
-  }
-
-  .log-intro {
-    background: #2a2a2a;
-  }
-
-  .log-intro p {
-    color: #aaa;
-  }
-
-  .expect-section h2 {
-    color: #e0e0e0;
-  }
-}
+/* Dark mode intentionally not implemented — page background stays white,
+   so light-text dark-mode overrides cause invisible text. Removed. */
 </style>
