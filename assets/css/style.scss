@@ -38,6 +38,38 @@ h1, h2, h3 {
   color: #2c3e50;
 }
 
+/* ── Override minima's grey-color bleed ──────────────────────────────────── */
+
+/* Minima sets .home h2 and paragraph text to $grey-color (#828282).
+   Force readable dark text throughout. */
+
+.home p,
+.home li,
+.home .intro-tagline,
+.home .intro-description,
+.home .log-intro p {
+  color: #333 !important;
+}
+
+.home h2,
+.home h3,
+.home .expect-section h2,
+.home .page-heading {
+  color: #1a1a1a !important;
+}
+
+/* Tagline gets slightly styled — dark, not muted */
+.home .intro-tagline {
+  color: #222 !important;
+  font-weight: 600;
+}
+
+/* Ensure body text contrast on white bg */
+body,
+p {
+  color: #222;
+}
+
 code {
   background: #f4f4f4;
   padding: 0.2rem 0.4rem;
