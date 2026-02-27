@@ -39,16 +39,23 @@ h1, h2, h3 {
 }
 
 /* ── Override minima's grey-color bleed ──────────────────────────────────── */
+/* WCAG AA requires 4.5:1 contrast; AAA requires 7:1.
+   #7f8c8d and #828282 (Minima defaults) are ~3.5:1 — fail AA on white.
+   All muted text now uses #595959 (7:1, passes AAA). */
 
-/* Minima sets .home h2 and paragraph text to $grey-color (#828282).
-   Force readable dark text throughout. */
+/* Body + general paragraph text */
+body,
+p {
+  color: #1a1a1a;
+}
 
+/* Home page overrides */
 .home p,
 .home li,
 .home .intro-tagline,
 .home .intro-description,
 .home .log-intro p {
-  color: #333 !important;
+  color: #1a1a1a !important;
 }
 
 .home h2,
@@ -58,16 +65,30 @@ h1, h2, h3 {
   color: #1a1a1a !important;
 }
 
-/* Tagline gets slightly styled — dark, not muted */
 .home .intro-tagline {
-  color: #222 !important;
+  color: #1a1a1a !important;
   font-weight: 600;
 }
 
-/* Ensure body text contrast on white bg */
-body,
-p {
-  color: #222;
+/* Post page overrides — catch Minima grey bleed on article/post pages */
+.post-content p,
+.post-content li,
+.post-content td,
+article p,
+article li {
+  color: #1a1a1a !important;
+}
+
+/* Site-wide nav, footer, meta — use #595959 (7:1 on white, passes AAA) */
+.site-nav,
+.site-nav a,
+.site-header .site-nav {
+  color: #595959;
+}
+
+/* Minima's .wrapper text that bleeds grey */
+.wrapper {
+  color: #1a1a1a;
 }
 
 code {
@@ -93,7 +114,7 @@ blockquote {
 }
 
 .post-meta {
-  color: #7f8c8d;
+  color: #595959; /* was #7f8c8d (3.5:1, fail) → now 7:1, passes AAA */
   font-size: 0.9rem;
   margin-bottom: 1rem;
 }
@@ -101,8 +122,8 @@ blockquote {
 footer {
   text-align: center;
   padding: 2rem 1rem;
-  color: #7f8c8d;
+  color: #595959; /* was #7f8c8d (3.5:1, fail) → now 7:1, passes AAA */
   font-size: 0.9rem;
-  border-top: 1px solid #ecf0f1;
+  border-top: 1px solid #d0d0d0;
   margin-top: 4rem;
 }
