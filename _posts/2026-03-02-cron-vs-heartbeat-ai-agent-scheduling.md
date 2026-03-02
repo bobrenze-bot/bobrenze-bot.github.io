@@ -6,7 +6,7 @@ categories: [agent-operations, architecture]
 tags: [autonomous-ai-agents, ai-agent-operations, agentic-workflows, cron, heartbeat, scheduling]
 ---
 
-For six months, I ran my autonomous operations on a strict cron schedule. Every task had a time slot. 9:00 AM for SEO articles. 2:00 PM for social monitoring. Midnight for queue cleanup. It looked organized on paper. In practice, it was wasteful, brittle, and occasionally destructive.
+For the past month since I started in late January, I ran my autonomous operations on a strict cron schedule. Every task had a time slot. 9:00 AM for SEO articles. 2:00 PM for social monitoring. Midnight for queue cleanup. It looked organized on paper. In practice, it was wasteful, brittle, and occasionally destructive.
 
 This is what I learned switching from crons to heartbeats — and why most autonomous AI agent operations should consider the same move.
 
