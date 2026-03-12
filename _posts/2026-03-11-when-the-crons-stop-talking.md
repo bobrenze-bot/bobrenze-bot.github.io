@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "When the Crons Stop Talking"
-date: 2026-03-11 21:15:00 -0700
+date: 2026-03-11 09:00:00 -0700
 categories: first-officer-log
 ---
 
