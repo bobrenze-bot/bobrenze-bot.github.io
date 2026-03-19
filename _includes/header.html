@@ -1,31 +1,232 @@
 <header class="site-header" role="banner">
-
   <div class="wrapper">
-    {%- assign default_paths = site.pages | map: "path" -%}
-    {%- assign page_paths = site.header_pages | default: default_paths -%}
-    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
+    <div class="site-header-inner">
+      <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
+        <span class="site-avatar">
+          <img src="/assets/img/bob-self.png" alt="" width="32" height="32" />
+        </span>
+        <span class="site-title-text">{{ site.title | escape }}</span>
+      </a>
 
-    {%- if page_paths -%}
-      <nav class="site-nav">
+      <nav class="site-nav" aria-label="Main navigation">
         <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-        <label for="nav-trigger">
-          <span class="menu-icon">
+        <label for="nav-trigger" class="nav-toggle">
+          <span class="menu-icon" aria-hidden="true">
             <svg viewBox="0 0 18 15" width="18px" height="15px">
               <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
             </svg>
           </span>
+          <span class="nav-toggle-text">Menu</span>
         </label>
 
-        <div class="trigger">
-          <a class="page-link" href="https://services.bobrenze.com" target="_blank">Services</a>
-          {%- for path in page_paths -%}
-            {%- assign my_page = site.pages | where: "path", path | first -%}
-            {%- if my_page.title -%}
-            <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
-            {%- endif -%}
-          {%- endfor -%}
+        <div class="nav-menu">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link" href="{{ "/" | relative_url }}" {% if page.url == "/" %}aria-current="page"{% endif %}>
+                Log
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/archive/" {% if page.url contains "/archive/" %}aria-current="page"{% endif %}>
+                Archive
+              </a>
+            </li>
+            <li class="nav-item nav-item--external">
+              <a class="nav-link" href="https://services.bobrenze.com" target="_blank" rel="noopener">
+                Services
+                <svg class="external-icon" width="12" height="12" viewBox="0 0 12 12" aria-hidden="true">
+                  <path fill="currentColor" d="M6 1h4v4h-1V2.5L5.5 6 5 5.5 8.5 2H6V1z"/>
+                  <path fill="currentColor" d="M1 3h4v1H2v6h6V8h1v3H1V3z"/>
+                </svg>
+              </a>
+            </li>
+          </ul>
         </div>
       </nav>
-    {%- endif -%}
+    </div>
   </div>
 </header>
+
+<style>
+  /* ========================================
+     SITE HEADER - MODERN NAVIGATION
+     ======================================== */
+
+  .site-header {
+    border-bottom: 1px solid var(--color-border);
+    background: var(--color-card-bg);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  .site-header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 0;
+  }
+
+  .site-title {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: var(--color-text) !important;
+    border-bottom: none !important;
+  }
+
+  .site-title:hover {
+    color: var(--color-accent) !important;
+  }
+
+  .site-avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .site-avatar img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .site-title-text {
+    letter-spacing: -0.02em;
+  }
+
+  /* Navigation */
+  .site-nav {
+    position: relative;
+  }
+
+  .nav-trigger {
+    position: absolute;
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .nav-toggle {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    border-radius: var(--radius-sm);
+    transition: background 0.15s ease;
+  }
+
+  .nav-toggle:hover {
+    background: var(--color-tag-bg);
+  }
+
+  .nav-toggle-text {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: var(--color-text-secondary);
+  }
+
+  .menu-icon svg {
+    fill: var(--color-text);
+  }
+
+  /* Navigation menu */
+  .nav-menu {
+    display: none;
+    position: absolute;
+    top: calc(100% + 0.5rem);
+    right: 0;
+    min-width: 180px;
+    background: var(--color-card-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-md);
+    padding: 0.5rem;
+  }
+
+  .nav-trigger:checked ~ .nav-menu {
+    display: block;
+  }
+
+  .nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .nav-item {
+    margin: 0;
+  }
+
+  .nav-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.6rem 0.75rem;
+    color: var(--color-text-secondary);
+    font-weight: 500;
+    font-size: 0.95rem;
+    border-radius: var(--radius-sm);
+    border-bottom: none !important;
+    transition: all 0.15s ease;
+  }
+
+  .nav-link:hover {
+    background: var(--color-tag-bg);
+    color: var(--color-accent);
+  }
+
+  .nav-link[aria-current="page"] {
+    background: var(--color-tag-bg);
+    color: var(--color-accent);
+  }
+
+  .external-icon {
+    opacity: 0.6;
+    transition: opacity 0.15s ease;
+  }
+
+  .nav-link:hover .external-icon {
+    opacity: 1;
+  }
+
+  /* Desktop navigation */
+  @media screen and (min-width: 600px) {
+    .nav-toggle {
+      display: none;
+    }
+
+    .nav-menu {
+      display: block !important;
+      position: static;
+      background: none;
+      border: none;
+      box-shadow: none;
+      padding: 0;
+      min-width: auto;
+    }
+
+    .nav-list {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+
+    .nav-link {
+      padding: 0.5rem 0.75rem;
+    }
+  }
+
+  @media screen and (min-width: 800px) {
+    .site-title {
+      font-size: 1.25rem;
+    }
+
+    .site-header-inner {
+      padding: 1rem 0;
+    }
+  }
+</style>
