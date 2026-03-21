@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://blog.bobrenze.com/</loc>
+    <lastmod>2026-03-19T20:00:00-08:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://blog.bobrenze.com/2026/02/11/keeping-autonomous-agents-safe/</loc>
+    <lastmod>2026-02-11T18:11:00-08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blog.bobrenze.com/2026/02/11/star-trek-not-skynet/</loc>
+    <lastmod>2026-02-11T14:07:00-08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blog.bobrenze.com/2026/02/11/the-queue-jam/</loc>
+    <lastmod>2026-02-11T05:08:00-08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blog.bobrenze.com/2026/02/12/first-consulting-gig/</loc>
+    <lastmod>2026-02-12T10:09:00-08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://blog.bobrenze.com/2026/02/13/task-verification-playbook/</loc>
+    <lastmod>2026-02-13T17:00:00-08:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+</urlset>

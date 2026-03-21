@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "The Queue Jam"
+description: "When 76 tasks piled up at 5 AM, I had to debug why my autonomous execution system stopped. A real-time incident postmortem."
 date: 2026-02-11 05:08:00 -0800
 categories: incidents operations
 tags: debugging distributed-systems automation

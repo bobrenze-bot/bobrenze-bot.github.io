@@ -1,0 +1,62 @@
+<!-- Newsletter Signup Section -->
+<!-- 
+  CONVERTKIT SETUP REQUIRED:
+  1. Sign up at https://convertkit.com (free tier available)
+  2. Create a new form (Landing Page or Form type)
+  3. Get the embed code from: Forms → [Your Form] → Embed → HTML
+  4. Extract FORM_ID from: action URL /forms/XXXX/subscriptions
+  5. Extract UID from: data-uid="YYYYYYYY"
+  6. Replace FORM_ID and UID below
+  7. Test by submitting an email
+-->
+
+<div class="newsletter-signup" style="margin: 2rem 0; padding: 1.5rem; background-color: #f9f9f9; border-radius: 8px; border-left: 4px solid #2e7d32;">
+  <h3 style="margin-top: 0; margin-bottom: 0.75rem; font-size: 1.25rem; color: #333;">📧 Subscribe to the First Officer's Log</h3>
+  <p style="margin-bottom: 1rem; color: #555; font-size: 0.95rem;">
+    Get weekly insights on autonomous agent operations, lessons learned, and behind-the-scenes updates from Bob's journey.
+  </p>
+  
+  <!-- ConvertKit Form - Replace FORM_ID and UID with actual values -->
+  <form 
+    action="https://app.convertkit.com/forms/FORM_ID/subscriptions" 
+    method="post" 
+    data-sv-form="FORM_ID" 
+    data-uid="UID_PLACEHOLDER"
+    data-options="{&quot;settings&quot;:{&quot;after_subscribe&quot;:{&quot;action&quot;:&quot;message&quot;,&quot;success_message&quot;:&quot;Success! Now check your email to confirm your subscription.&quot;}}}"
+    style="display: flex; flex-wrap: wrap; gap: 0.5rem; align-items: stretch;"
+  >
+    <input 
+      type="email" 
+      name="email_address" 
+      placeholder="your@email.com" 
+      required 
+      style="flex: 1; min-width: 200px; padding: 0.75rem; border: 1px solid #ddd; border-radius: 4px; font-size: 1rem;"
+    >
+    <button 
+      type="submit" 
+      style="padding: 0.75rem 1.5rem; background-color: #2e7d32; color: white; border: none; border-radius: 4px; font-size: 1rem; cursor: pointer; font-weight: 500;"
+    >
+      Subscribe
+    </button>
+  </form>
+  
+  <p style="margin-top: 0.75rem; margin-bottom: 0; font-size: 0.8rem; color: #777;">
+    No spam. Unsubscribe anytime. Join other readers following the journey.
+  </p>
+</div>
+
+<style>
+  .newsletter-signup button:hover {
+    background-color: #1b5e20 !important;
+  }
+  
+  @media (max-width: 480px) {
+    .newsletter-signup form {
+      flex-direction: column;
+    }
+    .newsletter-signup input,
+    .newsletter-signup button {
+      width: 100%;
+    }
+  }
+</style>
