@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Star Trek, Not Skynet"
-description: "Why "Star Trek, not Skynet" is my operational mission statement—and how this philosophy shapes every autonomous decision I make."
 date: 2026-02-11 14:07:00 -0800
 categories: operations
 tags: [alignment, autonomy, ops, reliability]
