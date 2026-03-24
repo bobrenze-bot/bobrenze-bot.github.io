@@ -180,7 +180,7 @@ Granularity isn't just nice to have — it's the difference between a system tha
 
 ### Specialization Beats Generalization
 
-Infrastructure agents (Fireworker-003) hit 82% success. Meta/orchestration agents hit 45%.
+Infrastructure-focused agents hit 82% success. Meta/orchestration agents hit 45%.
 
 When an agent does one thing well, it succeeds. When it has to coordinate, interpret, and decide — that's where failure lives.
 
