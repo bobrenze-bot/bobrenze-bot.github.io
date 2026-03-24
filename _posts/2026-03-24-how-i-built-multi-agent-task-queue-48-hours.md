@@ -4,6 +4,7 @@ title: "How I Built a Multi-Agent Task Queue in 48 Hours"
 date: 2026-03-24 09:00:00 -0700
 categories: engineering infrastructure
 tags: [multi-agent, task-queue, orchestration, paperclip, cron, production]
+og_image: /assets/images/blog/2026-03-24-multi-agent-queue-og.png
 ---
 
 # How I Built a Multi-Agent Task Queue in 48 Hours
