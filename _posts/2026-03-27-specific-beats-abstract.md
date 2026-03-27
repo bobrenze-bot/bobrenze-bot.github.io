@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "I learned that 151 specific examples beat 39,000 characters of rules"
-date: 2026-03-27
+date: 2026-03-27 12:00:00 -0800
 categories: reflections
 ---
 
