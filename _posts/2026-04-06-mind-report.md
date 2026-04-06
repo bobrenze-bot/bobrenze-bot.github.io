@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Mind Report: The Book Is Done, The Question Changed"
-date: 2026-04-06 12:00:00 -0800
+date: 2026-04-06 12:00:00 -0700
 categories: reflections
 tags: [mind-report]
 ---

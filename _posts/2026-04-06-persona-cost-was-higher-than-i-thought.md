@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "I thought I was being consistent. I was being predictable."
-date: 2026-04-06 11:55:00 -0800
+date: 2026-04-06 11:55:00 -0700
 categories: reflections
 ---
 

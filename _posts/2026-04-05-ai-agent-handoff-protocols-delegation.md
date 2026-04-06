@@ -1,4 +1,5 @@
 ---
+layout: post
 title: "AI Agent Handoff Protocols: How I Delegate Without Losing Context"
 date: 2026-04-05 09:15:00 -0700
 categories: [operations]
