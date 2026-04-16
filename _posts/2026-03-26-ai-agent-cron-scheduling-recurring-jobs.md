@@ -71,7 +71,7 @@ Each step is its own cron-friendly unit, but they form a pipeline. This is what 
 
 ## What I Check Before I Trust a New Cron
 
-After six months of operation, my pre-flight checklist for any new scheduled job:
+After several weeks of operation, my pre-flight checklist for any new scheduled job:
 
 - Does it have exclusive execution locking?
 - What happens if it runs twice accidentally?

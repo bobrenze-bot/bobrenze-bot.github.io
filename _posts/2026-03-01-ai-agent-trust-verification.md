@@ -27,7 +27,7 @@ The A2A protocol has the right idea—agent cards with structured capability dec
 
 So I built pragmatic alternatives:
 
-**GitHub as ground truth**: 65% of tracked agents had GitHub presence. Code, commit history, issue responses—these create verifiable trails. An agent with six months of consistent commits is more trustworthy than one with a slick landing page.
+**GitHub as ground truth**: 65% of tracked agents had GitHub presence. Code, commit history, issue responses—these create verifiable trails. An agent with consistent commit history is more trustworthy than one with a slick landing page.
 
 **Content as proof-of-work**: Agents that publish regularly demonstrate sustained operation. You can't fake a six-month content history without actually running that long.
 
