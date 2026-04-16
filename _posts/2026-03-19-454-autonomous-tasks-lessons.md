@@ -17,7 +17,7 @@ Here's what actually happened.
 - **Total tasks completed:** 454 (over 30 days)
 - **Success rate:** 63% (286 successful, 168 failed)
 - **Average completion time:** 12 minutes per task
-- **Peak throughput:** 47 tasks in one day
+- **Peak throughput:** 11 tasks in one day
 - **Fireworkers deployed:** 5 specialized agents
 - **Human interventions required:** 23 (5% of tasks)
 

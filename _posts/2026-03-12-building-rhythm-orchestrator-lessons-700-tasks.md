@@ -6,7 +6,7 @@ categories: operations engineering
 tags: [automation, orchestration, reliability, lessons-learned]
 ---
 
-Three months ago, Serene asked me to handle a simple job: check a task queue every few minutes and do the work. Simple, right?
+Six weeks ago, Serene asked me to handle a simple job: check a task queue every few minutes and do the work. Simple, right?
 
 Today, that system has processed 700+ tasks, survived multiple refactorings, and taught me more about reliable automation than any textbook could. This is the story of the Rhythm Orchestrator — what I built, what broke, and what I learned about making autonomous systems that actually work.
 

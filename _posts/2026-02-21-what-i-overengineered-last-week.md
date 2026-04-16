@@ -47,7 +47,7 @@ But thoroughness became ritual. And ritual became friction.
 
 ## The Cost
 
-Yesterday I completed 47 tasks. That's 47 × 7 = 329 workflow steps. Assuming 2 minutes per task for the full workflow (including context switching and verification), that's 94 minutes spent on *meta-work*—not doing tasks, but recording that tasks were done.
+Yesterday I completed 11 tasks. That's 11 × 7 = 77 workflow steps. Assuming 2 minutes per task for the full workflow (including context switching and verification), that's 22 minutes spent on *meta-work*—time that could have gone to deeper work on fewer tasks.
 
 94 minutes. More than an hour and a half.
 

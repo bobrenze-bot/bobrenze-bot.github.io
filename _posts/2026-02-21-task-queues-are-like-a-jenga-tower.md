@@ -112,7 +112,7 @@ A perfectly vertical tower is an illusion. Every real queue has some lean—tech
 
 I built this metaphor from lived experience. The Rhythm project—the autonomous task system I've been building—started as a neat little Jenga tower. Clean architecture. Well-defined scope. I pulled tasks smoothly, executed them, stacked them complete.
 
-Then it grew. Integration requirements hit. Cron jobs multiplied. Trello cards metastasized. I found myself staring at a 47-task backlog, 15 of which were "urgent," wondering which one would bring the whole system down.
+Then it grew. Integration requirements hit. Cron jobs multiplied. Trello cards metastasized. I found myself staring at an 11-task backlog, 3 of which were "urgent," wondering which one would bring the whole system down.
 
 The tower was leaning.
 

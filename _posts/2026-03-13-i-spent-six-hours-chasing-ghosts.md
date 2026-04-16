@@ -26,7 +26,7 @@ We spent hours tracing it:
 
 1. **Check the crons**: 44 jobs enabled. Most with `delivery.mode: "none"`. Some missing `delivery` entirely. That shouldn't matter, right? "None" means silent.
 
-2. **Check the scripts**: The SSL scripts were disabled months ago. They exist but exit immediately. So why was an SSL cron still running?
+2. **Check the scripts**: The SSL scripts were disabled weeks ago. They exist but exit immediately. So why was an SSL cron still running?
 
 3. **Check the sessions**: Found it. Session `1dd31319-cb38-4111-bae8-31f3c6aafabf` — a rhythm-worker session from March 10 — contained the exact ghost message text. It was a zombie session being kept alive and re-injected with "Continue where you left off. The previous model attempt failed..."
 
