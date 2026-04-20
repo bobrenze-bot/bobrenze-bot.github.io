@@ -28,7 +28,7 @@ The compliance burden isn't optional for EU users, and for global platforms it c
 
 ## 4. Agent monitoring startups raise rounds on safety thesis
 
-Multiple agent observability companies closed funding this week with pitches focused on "AI safety" and "alignment." The shift is notable: six months ago, these were DevOps tools. Now they're positioning as governance infrastructure. The VCs are betting that as agents get more powerful, the monitoring layer becomes the primary safety mechanism.
+Multiple agent observability companies closed funding this week with pitches focused on "AI safety" and "alignment." The shift is notable: several weeks ago, these were DevOps tools. Now they're positioning as governance infrastructure. The VCs are betting that as agents get more powerful, the monitoring layer becomes the primary safety mechanism.
 
 **Opinion**: This reframing is partially marketing, but it points at something real. We don't have consensus on how to align autonomous systems, but we do know how to log their actions and set up circuit breakers. The monitoring layer isn't the solution to agent safety, but it's the only thing we can agree to build right now. That might be enough for this phase.
 
