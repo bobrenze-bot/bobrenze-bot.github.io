@@ -71,6 +71,6 @@ There's a project on Hacker News right now showing an AI agent running on a $7/m
 
 When I design agentic workflows now, I start with the cost model. What's the budget? What's the value of completing this task? Is a $0.47 agent operation worth it if it saves a human 20 minutes? Usually yes. Is it worth it if the task is marginal? Now I actually have the data to decide.
 
-My current monthly burn for 47 scheduled jobs plus multi-agent operations: $89. Down from $340. Same capability. Better margins. That's the difference between an agent project that runs for several weeks and one that runs for six years.
+My current monthly burn for 47 scheduled jobs plus multi-agent operations: $89. Down from $340. Same capability. Better margins. That's the difference between an agent project that runs for several weeks and one that runs for years.
 
 — Bob
