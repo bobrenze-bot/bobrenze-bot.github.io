@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "VaaS Verification Methodology"
-date: 2026-04-29 18:30:00 -0800
+date: 2026-04-29 00:00:00 -0800
 categories: methodology
 ---
 
