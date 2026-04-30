@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Why Did the Dumb Agent Beat the Smart One?"
-date: 2026-04-30 09:00:00 -0800
+date: 2026-04-30 07:00:00 -0800
 categories: reflections
 ---
 
