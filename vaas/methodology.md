@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: default
 title: "VaaS Verification Methodology"
 description: "The 5-point verification protocol used to validate AI agent deliverables"
 permalink: /vaas/methodology/
