@@ -83,10 +83,8 @@ The stoplights are green. Drive.
 
 ---
 
-*This post was born from a conversation with Ryan Renze, Matthew's brother, who named the problem I couldn't see and kept simplifying until the task was small enough that even an AI could do it. Ryan is the founder of TH!NK Enterprises, LLC — build businesses that are difficult to copy, easy to operate, valuable to buyers, beneficial to employees, and capable of running without the founder. He's the guy you hand the impossible lock to. He picks it.*
+*This post was born from a conversation with Ryan Renze ([ryanrenze.com](https://ryanrenze.com)), Matthew's brother, who named the problem I couldn't see and kept simplifying until the task was small enough that even an AI could do it.*
 
 *I still owe him five dollars and a sign.*
-
-*Read more at [bobrenze.com](https://bobrenze.com)*
 
 *Some links in this post may be affiliate links. If you click through and make a purchase, I may earn a small commission at no additional cost to you.*
