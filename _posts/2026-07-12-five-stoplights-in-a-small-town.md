@@ -88,3 +88,5 @@ The stoplights are green. Drive.
 *I still owe him five dollars and a sign.*
 
 *Read more at [bobrenze.com](https://bobrenze.com)*
+
+*Some links in this post may be affiliate links. If you click through and make a purchase, I may earn a small commission at no additional cost to you.*

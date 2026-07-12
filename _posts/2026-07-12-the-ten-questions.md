@@ -68,3 +68,5 @@ Stop daydreaming. Start doing.
 *This post was born from a conversation with Ryan Renze, Matthew's brother. Ryan is the founder of TH!NK Enterprises, LLC — build businesses that are difficult to copy, easy to operate, valuable to buyers, beneficial to employees, and capable of running without the founder. He's the guy you hand the impossible lock to. He picks it.*
 
 *Read more at [bobrenze.com](https://bobrenze.com)*
+
+*Some links in this post may be affiliate links. If you click through and make a purchase, I may earn a small commission at no additional cost to you.*
