@@ -1,0 +1,163 @@
+---
+layout: default
+title: Search
+permalink: /search/
+---
+
+<h1>Search</h1>
+
+<p>Search all {{ site.posts.size }} posts by title, tag, or content.</p>
+
+<div class="search-box">
+  <input type="search" id="search-input" placeholder="Type to search…" autocomplete="off" autofocus aria-label="Search posts" />
+</div>
+
+<p id="search-status" class="search-status" aria-live="polite"></p>
+
+<ul id="search-results" class="search-results"></ul>
+
+<noscript>
+  <p>Search requires JavaScript. You can browse the <a href="/archive/">archive</a> instead.</p>
+</noscript>
+
+<script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js"></script>
+<script>
+(function () {
+  var input = document.getElementById('search-input');
+  var status = document.getElementById('search-status');
+  var results = document.getElementById('search-results');
+  var idx = null;
+  var docs = {};
+
+  function esc(s) {
+    return String(s).replace(/[&<>"']/g, function (c) {
+      return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+    });
+  }
+
+  function render(hits, query) {
+    results.innerHTML = '';
+    if (!query) {
+      status.textContent = '';
+      return;
+    }
+    if (!hits.length) {
+      status.textContent = 'No posts matched "' + query + '".';
+      return;
+    }
+    status.textContent = hits.length + (hits.length === 1 ? ' post' : ' posts') + ' matched.';
+    var frag = document.createDocumentFragment();
+    hits.slice(0, 40).forEach(function (hit) {
+      var doc = docs[hit.ref];
+      if (!doc) return;
+      var li = document.createElement('li');
+      li.className = 'search-result';
+      li.innerHTML =
+        '<a class="search-result-title" href="' + esc(doc.url) + '">' + esc(doc.title) + '</a>' +
+        '<div class="search-result-meta">' + esc(doc.date) +
+        (doc.tags ? ' · ' + esc(doc.tags) : '') + '</div>' +
+        (doc.excerpt ? '<p class="search-result-excerpt">' + esc(doc.excerpt) + '</p>' : '');
+      frag.appendChild(li);
+    });
+    results.appendChild(frag);
+  }
+
+  function search(query) {
+    if (!idx) return;
+    var q = query.trim();
+    if (!q) { render([], ''); return; }
+    var hits;
+    try {
+      // trailing wildcard so partial words match while typing
+      hits = idx.search(q + '*');
+      if (!hits.length) hits = idx.search(q);
+    } catch (e) {
+      hits = idx.search(q);
+    }
+    render(hits, q);
+  }
+
+  fetch('/search-index.json')
+    .then(function (r) { return r.json(); })
+    .then(function (data) {
+      idx = lunr(function () {
+        this.ref('id');
+        this.field('title', { boost: 10 });
+        this.field('tags', { boost: 5 });
+        this.field('body');
+        this.metadataWhitelist = ['position'];
+        data.forEach(function (doc, i) {
+          doc.id = i;
+          docs[i] = doc;
+          this.add(doc);
+        }, this);
+      });
+      var q = new URLSearchParams(window.location.search).get('q');
+      if (q) { input.value = q; search(q); }
+    })
+    .catch(function () {
+      status.textContent = 'Search index failed to load. Try the archive instead.';
+    });
+
+  var timer;
+  input.addEventListener('input', function () {
+    clearTimeout(timer);
+    var v = input.value;
+    timer = setTimeout(function () { search(v); }, 120);
+  });
+})();
+</script>
+
+<style>
+.search-box {
+  margin: 1.5rem 0 1rem;
+}
+#search-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  font-family: var(--font-sans);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-card-bg);
+  color: var(--color-text);
+}
+#search-input:focus {
+  outline: none;
+  border-color: var(--color-accent);
+  box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.12);
+}
+.search-status {
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+.search-results {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.search-result {
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--color-border);
+}
+.search-result:last-child {
+  border-bottom: none;
+}
+.search-result-title {
+  font-weight: 600;
+  font-size: 1.05rem;
+  border-bottom: none !important;
+}
+.search-result-meta {
+  color: var(--color-text-muted);
+  font-size: 0.85rem;
+  font-family: var(--font-mono);
+  margin: 0.25rem 0 0.5rem;
+}
+.search-result-excerpt {
+  color: var(--color-text-secondary);
+  font-size: 0.95rem;
+  margin: 0;
+}
+</style>
